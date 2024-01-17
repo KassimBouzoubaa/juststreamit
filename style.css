@@ -1,0 +1,149 @@
+/* Réinitialisation générale */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Style pour les titres de section */
+h2 {
+  text-align: center;
+  color: black;
+}
+
+/* Style pour l'en-tête */
+header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style pour la navigation */
+nav {
+  display: flex;
+  margin-right: 2rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+/* Style pour la section "Meilleur film" */
+#meilleur-film {
+  background-color: #f0f0f0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#meilleur-film img {
+  height: auto;
+  margin: 10px 0px;
+}
+
+.info-film {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 26px;
+  z-index: 2;
+  margin-left: 10px;
+}
+
+.info-film button {
+  padding: 10px 40px;
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Style pour la section "Catégorie" */
+.categorie {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Style pour le conteneur de la catégorie */
+.categorie-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Style pour le conteneur du carrousel */
+.carousel-container {
+  overflow: hidden;
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* Style pour le carrousel d'images */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+/* Style pour les images dans le carrousel */
+.carousel img {
+  width: 100%;
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Style pour les boutons "prev" et "next" */
+.categorie-container button {
+  font-size: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Style pour les boutons "prev" et "next" au survol */
+.categorie-container button:hover {
+  background-color: #555;
+}
+
+/* Style pour la modal */
+#modal {
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+#modal img {
+  max-width: 100%;
+  
+}
+
+#modal p {
+  margin-top: 10px;
+}
+
+#modal button {
+  margin-top: 10px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#modal button:hover {
+  background-color: #0056b3;
+}
